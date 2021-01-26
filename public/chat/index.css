@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: #000;
+  background-color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+}
+
+header a,
+header a:visited {
+  font-size: 18px;
+  color: #dedede;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+section {
+  height: 91%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 2px 7px 23px 3px #ccc;
+
+}
+
+@media only screen and (max-width:600px) {
+  section input {
+    width: 100% !important;
+  }
+
+  #messages {
+    width: 100% !important;
+  }
+}
+
+section input {
+  display: block;
+  height: auto;
+  width: 800px;
+
+  margin: 10px auto;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #2B2B2A;
+  padding: 5px;
+  font-size: 42px;
+  color: #000;
+}
+
+#messages {
+  /* background-color:#fff; */
+  background-image: url('./img/bg.png');
+  border: 3px solid #ccc;
+  padding: 10px;
+  height: 100%;
+  width: 800px;
+  margin: 0 auto;
+  /* box-shadow: inset 0px 0px 11px -2px #000; */
+  color: #000;
+  overflow-y: auto;
+}
+
+.pull-right {
+  background-color: #dbf7c6 !important;
+}
+
+#messages p {
+  margin: 5px 0;
+  padding: 5px;
+
+  color: #000;
+
+}
+
+.info {
+  margin: 5px 0;
+  padding-top: 5px;
+  font-size:20px;
+  padding-bottom: 5px;
+}
+
+.message-container {
+  width: 60%;
+  margin: 5px 0;
+  color: #fff;
+  display: inline-flex;
+  /*position:relative; */
+  background-color: #ecedf1;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.message-container .username {
+  display: inline-block;
+  margin-right: 5px;
+  padding-left: 5px;
+  font-weight: bold;
+  /* color:#ca113b; */
+  color: #000;
+
+  text-align: right;
+}
+
+.bg-me {
+  background-color: #fff;
+  color: #000;
+}
+
+.me,
+.username.me {
+  font-weight: bold;
+  color: #0b2b2b;
+
+
+}
+
+.message-container .username.me {
+  display: inline-block;
+  margin-right: 5px;
+  display: grid;
+}
+
+span.message {
+  color: #000;
+
+}
+
+.fa-2x {
+  font-size: 1.1em !important;
+  color: #000;
+  padding: 6px;
+
+}
